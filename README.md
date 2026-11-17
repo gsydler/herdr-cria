@@ -39,6 +39,7 @@ herdr-cria/
 │   ├── check-herdr.mjs        checks every mod against Herdr's rules for a shared mod
 │   └── banner.sh              renders a mod's banner to its preview.png
 ├── .github/workflows/ci.yml   CI: the Herdr checks, and each mod's tests on Linux, macOS and Windows
+├── .github/SECURITY.md        how to report a security problem
 ├── .claude/skills/            release-check and smoke-test, for agents working on the mods
 ├── CLAUDE.md                  rules for an agent working on this repo, and the list of mods
 └── LICENSE
