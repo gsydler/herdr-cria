@@ -11,7 +11,7 @@
 // so it runs locally only, from the release-check skill.
 
 import { readFileSync, readdirSync, existsSync, statSync } from "node:fs";
-import { join, dirname, relative, resolve } from "node:path";
+import { join, dirname, relative, resolve, sep } from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 
@@ -182,7 +182,8 @@ function checkEntry(entry) {
 
       for (const [, spec] of text.matchAll(/^\s*import\s[^;]*?from\s+["']([^"']+)["']/gm)) {
         if (spec.startsWith(".")) {
-          const target = relative(ROOT, join(ROOT, dirname(file), spec));
+          // `dir` is written with "/", and Windows paths use "\".
+          const target = relative(ROOT, join(ROOT, dirname(file), spec)).replaceAll(sep, "/");
           if (!existsSync(join(ROOT, target))) error(`${file}: imports ${spec}, which doesn't exist`);
           else if (!target.startsWith(`${dir}/`)) error(`${file}: imports ${spec}, outside its own folder; Herdr can't load it`);
         }
