@@ -1,0 +1,13 @@
+{
+  "visible": [],
+  "manual": [
+    {
+      "do": "Without touching Herdr, let the test agent and its sub-agent ask their questions",
+      "expect": "The Dock icon shows your own waiting agents plus 2: the agent and its sub-agent"
+    },
+    {
+      "do": "Switch to Herdr's main layout, which doesn't have the mod",
+      "expect": "No number, although the two agents still wait"
+    }
+  ]
+}

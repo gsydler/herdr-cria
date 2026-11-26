@@ -8,6 +8,7 @@
 |---|---|---|
 | [File preview](file-preview/) | Shows one file read-only in a tab or a split: Markdown with working links and images, PDF, images, CSV and TSV tables, JSON as a tree, anything else as code. Reloads when the file changes on disk. | `herdr.dev/mods/gsydler/herdr-cria--file-preview` |
 | [Files extended](files-extended/) | Herdr's Files panel with a right-click menu (new, rename, cut, copy, paste, duplicate, trash, delete, open in your editor or a terminal, copy paths) and an icon per kind of file. A click opens the file in File preview when you have it. | `herdr.dev/mods/gsydler/herdr-cria--files-extended` |
+| [Dock badge](dock-badge/) | macOS only: the number of agents waiting on you (a question or a permission), sub-agents included, on Herdr's icon in the Dock. Draws nothing in Herdr's window. | `herdr.dev/mods/gsydler/herdr-cria--dock-badge` |
 
 To add one, ask your agent in Herdr:
 
@@ -35,6 +36,8 @@ herdr-cria/
 │   └── assets/                the banner preview.png is rendered from
 ├── files-extended/            one mod: herdr.dev/mods/gsydler/herdr-cria--files-extended, laid out the same way,
 │                              with a NOTICE for the Herdr code it is based on
+├── dock-badge/                one mod: herdr.dev/mods/gsydler/herdr-cria--dock-badge, laid out the same way,
+│                              with a banner drawn in HTML, since the mod draws nothing in the window
 ├── scripts/
 │   ├── check-herdr.mjs        checks every mod against Herdr's rules for a shared mod
 │   └── banner.sh              renders a mod's banner to its preview.png
