@@ -8,6 +8,7 @@ Gsydler's [Herdr](https://herdr.dev) mods, shared on herdr.dev/mods. The repo ho
 |---|---|---|
 | [`file-preview/`](file-preview/) | `cria-file-preview` | One file shown read-only in a tab or split, by a viewer for its kind. Its own rules: `file-preview/CLAUDE.md`. |
 | [`files-extended/`](files-extended/) | `cria-files-extended` | Herdr's Files panel with a right-click menu and file icons; opens files in `cria-file-preview` when it is installed. Its own rules: `files-extended/CLAUDE.md`. |
+| [`dock-badge/`](dock-badge/) | `cria-dock-badge` | The number of agents waiting on the person, sub-agents included, on Herdr's macOS Dock icon; draws nothing in the window. Its own rules: `dock-badge/CLAUDE.md`. |
 
 A new entry adds its row here, and in `README.md`.
 
